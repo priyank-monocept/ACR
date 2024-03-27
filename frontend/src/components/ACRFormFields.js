@@ -1,9 +1,8 @@
 import React from "react";
-import { useForm, Controller} from "react-hook-form";
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import { useForm, Controller } from "react-hook-form";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import { DevTool } from "@hookform/devtools";
-
 
 const ACRFormFields = () => {
   const {
@@ -24,9 +23,13 @@ const ACRFormFields = () => {
 
   const FormInput = ({ name, placeholder, rules, errors }) => (
     <>
-      <div class="input-fields">
-      <input type="text" {...register(name, rules)} placeholder={placeholder} />
-      <span className="error">{errors[name]?.message}</span>
+      <div className="input-fields">
+        <input
+          type="text"
+          {...register(name, rules)}
+          placeholder={placeholder}
+        />
+        <span className="error">{errors[name]?.message}</span>
       </div>
     </>
   );
@@ -150,22 +153,26 @@ const ACRFormFields = () => {
             })}
             errors={errors}
           />
-          <Controller
-            name="policy_date"
-            control={control}
-            rules={{ required: 'Select policy date' }}
-            render={({ field }) => (
-              <DatePicker
-                selected={field.value}
-                onChange={(date) => field.onChange(date)}
-                dateFormat="yyyy-MM-dd"
-                placeholderText="Select Policy Date"
-              />
-            )}
-          />
-          <span className="error">{errors.policy_date?.message}</span>
+          <div className="input-fields">
+            <Controller
+              name="policy_date"
+              control={control}
+              rules={{ required: "Select policy date" }}
+              render={({ field }) => (
+                <DatePicker
+                  selected={field.value}
+                  onChange={(date) => field.onChange(date)}
+                  dateFormat="yyyy-MM-dd"
+                  placeholderText="Select Policy Date"
+                />
+              )}
+            />
+            <span className="error">{errors.policy_date?.message}</span>
+          </div>
         </div>
-        <button type="submit">Download Pdf</button>
+        <div className="submit-button">
+          <button type="submit">Download Pdf</button>
+        </div>
       </form>
       {/* <DevTool control={control} placement="top-left" /> */}
     </div>

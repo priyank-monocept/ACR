@@ -33,7 +33,7 @@ function ACRCsvUpload() {
             (value[0] && /csv/.test(value[0].type)) || 'Only CSV files are allowed',
         })}
       />
-      {errors.file && <p className='error'>{errors.file.message}</p>}
+      {errors.file && <span className='error'>{errors.file.message}</span>}
       <button type="submit">Submit</button>
     </form>
   );

@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    // box-shadow: 0 0 0.3cm rgba(0, 0, 0, 0.3);
+}
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+
+
+@media only screen and (min-width:800px){
+    page {
+      background: white;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 0.5cm;
+    }
+    page[size="A4"] {  
+      width: 21cm;
+      height: 29.7cm; 
+    }
+    page[size="A4"][layout="landscape"] {
+      width: 29.7cm;
+      height: 21cm;  
+    }
+  }
+.te-flex {
+    display: flex;
+}
+.te-space-between {
+    justify-content: space-between;
+}
+.te-center{
+    align-items: center;
+}
+.p-5 {
+    padding: 5px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mx-5 {
+    margin:0 5px;
+}
+.mx-16{
+    margin-left: 16px;margin-right: 16px;
+}
+.my-5 {
+    margin: 5px 0;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mr-8 {
+    margin-right: 8rem;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-290{
+    margin-top: 290px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-12 {
+    margin-left: 12px;
+}
+.ml-18 {
+    margin-left: 18px;
+}
+.ml-38 {
+    margin-left: 38px;
+}
+.ml-25 {
+    margin-left: 25px;
+}
+.ml-30 {
+    margin-left:30px;
+}
+.ml-40 {
+    margin-left:40px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.ml-60 {
+    margin-left: 60px;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.mt-auto {
+    margin-top: auto;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-5{
+    gap: 5px;
+}
+.mt-380 {
+    margin-top: 380px;
+}
+.mt-330 {
+    margin-top: 330px;
+}
+.mt-140 {
+    margin-top: 140px;
+}
+.te-block {
+    display: block;
+}
+.bg-yellow {
+    background: #fff4c7;
+}
+.light-color {
+    color: #7c7475;
+}
+.float-right {
+    float: right;
+}
+.border-bottom-1 {
+    border-bottom: 0.6px solid black;
+}
+.flex-1{
+    flex: 1;
+}
+.w-100 {
+    width: 100px;
+}
+.w-80 {
+    width: 80px;
+}
+.w-80per {
+    width: 80%;
+}
+.w-567 {
+    width: 567px;
+}
+.w-578 {
+    width: 578px;
+}
+
+.w-200 {
+    width: 200px;
+}
+.w-220 {
+    width: 220px;
+}
+.w-155 {
+    width: 153px;
+}
+
+.w-300 {
+    width: 300px;
+}
+.w-420 {
+    width: 420px;
+}
+.w-30 {
+    width: 30px;
+}
+.w-60 {
+    width: 60px;
+}
+.w-40per{
+    width: 40%;
+}
+.w-20per{
+    width: 20%;
+}
+.w-16per{
+    width: 16%;
+}
+.w-10per{
+    width: 10%;
+}
+.w-100per {
+    width: 100%;
+}
+.w-70per {
+    width: 70%;
+}
+.w-56per {
+    width: 56%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-50px {
+    width: 50px;
+}
+.weight-600 {
+    font-weight: 600;
+}
+.weight-500 {
+    font-weight: 500;
+}
+.font-12 {
+    font-size: 12px;
+}
+.font-10 {
+    font-size: 10px;
+}
+.font-9 {
+    font-size: 9px;
+}
+.label {
+    // width: 125px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.collapse{
+     border-collapse: collapse;
+}
+
+.data {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid #acacac;
+    font-size: 12px;
+}
+.data1 {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    // border: 1px solid black;
+    font-size: 12px;
+}
+
+.page1 {
+    .heading {
+        color: #2a6db4;
+        h3 {
+            margin-top: auto;
+        }
+        img {
+            width: 100px;
+        }
+    }
+    .policy_div {
+        .policy {
+            width: 60%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 125px;
+            }
+            .table_div {
+                width: 300px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .date_inception {
+            width: 60%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 125px;
+            }
+            .table_div {
+                justify-content: space-between;
+                width: 300px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .company_name {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 125px;
+            }
+            .table_div {
+                justify-content: space-between;
+                width: 617px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+    }
+    .person_details {
+        .name {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 140px;
+            }
+            .table_div {
+                justify-content: space-between;
+                width: 617px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .date_of_birth {
+            width: 60%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 140px;
+                font-weight: 300;
+                font-size: 12px;
+            }
+            .table_div {
+                justify-content: space-between;
+                width: 300px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .relation {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            span {
+                margin: 0;
+            }
+            .table_div {
+                justify-content: space-between;
+                // width: 617px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .gender {
+            width: 25%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 100px;
+            }
+        }
+        .address {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            .add {
+                width: 100px;
+            }
+            .table_div {
+                table {
+                    border-collapse: collapse;
+                }
+            }
+            .city {
+                margin-left: 5px;
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    margin-left: auto;
+                }
+                table {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .state {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            .add {
+                width: 70px;
+            }
+            .table_div {
+                width: 640px;
+                table {
+                    border-collapse: collapse;
+                }
+            }
+            .pin {
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    margin-left: auto;
+                }
+                table {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .email {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 72px;
+            }
+            .table_div {
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+    }
+    .bank_details {
+        .bank {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 100px;
+            }
+            .table_div {
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+    }
+    .hospital_details {
+        .hospital {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 115px;
+            }
+            .table_div {
+                width: 641px;
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .hospital,
+        .address {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            .add {
+                width: 116px;
+            }
+            .table_div {
+                table {
+                    border-collapse: collapse;
+                }
+            }
+            .city {
+                margin-left: 5px;
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    margin-left: auto;
+                }
+                table {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .state {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            .add {
+                width: 115px;
+            }
+            .table_div {
+                width: 640px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+            .pin {
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    margin-left: auto;
+                }
+                table {
+                    border-collapse: collapse;
+                    margin-left: 20px;
+                }
+            }
+        }
+        .email {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 115px;
+            }
+            .table_div {
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .date {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            .date_label {
+                width: 131px;
+            }
+            .table_div {
+                flex: 1;
+
+                margin-left: 17px;
+                align-items: center;
+                justify-content: space-between;
+                .date_tables {
+                    align-items: center;
+                    gap: 10px;
+                    table {
+                        border-collapse: collapse;
+                    }
+                }
+                .time {
+                    // margin-left: auto;
+                    margin-right: 1rem;
+                    align-items: center;
+
+                    table {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.page2 {
+    .date {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 5px;
+        label {
+            width: 100px;
+        }
+        .table_div {
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+
+            table {
+                border-collapse: collapse;
+            }
+        }
+    }
+    .time {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+        label {
+            width: 99px;
+        }
+        .table_div {
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+
+            table {
+                border-collapse: collapse;
+            }
+        }
+    }
+    .place {
+        width: 100%;
+        justify-content: space-between;
+        // align-items: center;
+        margin-top: 5px;
+        label {
+            width: 100px;
+        }
+        .empty_div {
+            width: 672px;
+        }
+    }
+    .witness {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+        label {
+            width: 115px;
+        }
+        .table_div {
+            width: 641px;
+            
+        }
+    }
+    .witness,
+    .address {
+        width: 100%;
+        // justify-content: space-between; 
+        // margin-top: 5px;
+        .add {
+            width: 116px;
+        }
+       
+        .city {
+            margin-left: 5px;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: space-between;
+            label {
+                margin-left: auto;
+            }
+          
+        }
+    }
+    .state {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 5px;
+        .add {
+            width: 115px;
+        }
+        .table_div {
+            width: 640px;
+
+        }
+        .pin {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            label {
+                margin-left: auto;
+            }
+          
+        }
+    }
+    .email {
+        width: 100%;
+        // justify-content: space-between;
+        margin-top: 5px;
+        label {
+            width: 115px;
+        }
+      
+    }
+    .dates {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        .table_div {
+            flex: 1;
+            // margin-left: 17px;
+            align-items: center;
+            justify-content: space-between;
+            .date_tables {
+                align-items: center;
+                // gap: 10px;
+                table {
+                    border-collapse: collapse;
+                }
+            }
+            
+        }
+    }
+    .nature_claim{
+        width:39%;
+        justify-content: space-between;
+        
+    }
+    .post_mortem{
+        align-items: flex-start;
+          .date_hospital{
+            // width: 50%;
+          }
+    }
+}
+.page3{
+    .amount_table{
+        margin-top: 10px;
+        border-collapse: collapse;
+        font-size: 12px;
+        font-weight: 100;
+        width: 100%;
+        border: 1px solid #7c7475;
+        thead{
+            background: #fff4c7;
+            th{
+                text-align: center;
+                padding: 5px 0 ;
+                font-weight: 400;
+                border: 1px solid #7c7475;
+   
+            }}
+            td{
+                text-align: center;
+                padding: 5px 0 ;
+                font-weight: 400;
+                border: 1px solid #7c7475;
+            }
+       
+    }
+}
+.page4 {
+    .declaration {
+        margin: 0 10px;
+        font-size: 10px;
+        ol {
+            li {
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .date_sign {
+        font-size: 10px;
+        align-items: center;
+    }
+}
+.page5 {
+    .guardian_details {
+        .name {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 140px;
+            }
+            .table_div {
+                justify-content: space-between;
+                width: 617px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .date_of_birth {
+            width: 50%;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+            label {
+                width: 140px;
+                font-weight: 300;
+                font-size: 12px;
+            }
+            .table_div {
+                align-items: center;
+                gap: 5px;
+                justify-content: space-between;
+                width: 220px;
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .relation {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 145px;
+            }
+            .table_div {
+                justify-content: space-between;
+                // width: 617px;
+
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+        .gender {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 70px;
+            }
+            table {
+                border-collapse: collapse;
+            }
+        }
+        .address {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            .add {
+                width: 70px;
+            }
+            .table_div {
+                table {
+                    border-collapse: collapse;
+                }
+            }
+            .city {
+                margin-left: 5px;
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    margin-left: auto;
+                }
+                table {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .state {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            .add {
+                width: 70px;
+            }
+            .table_div {
+                width: 640px;
+                table {
+                    border-collapse: collapse;
+                }
+            }
+            .pin {
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    margin-left: auto;
+                }
+                table {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .email {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+            label {
+                width: 72px;
+            }
+            .table_div {
+                table {
+                    border-collapse: collapse;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+
+    
+}

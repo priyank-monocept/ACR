@@ -1,0 +1,1086 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+}
+
+
+@media only screen and (min-width: 800px) {
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+  }
+  page[size=A4] {
+    width: 21cm;
+    height: 29.7cm;
+  }
+  page[size=A4][layout=landscape] {
+    width: 29.7cm;
+    height: 21cm;
+  }
+}
+.te-flex {
+  display: flex;
+}
+
+.te-space-between {
+  justify-content: space-between;
+}
+
+.te-center {
+  align-items: center;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mx-5 {
+  margin: 0 5px;
+}
+
+.mx-16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.my-5 {
+  margin: 5px 0;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mr-8 {
+  margin-right: 8rem;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-290 {
+  margin-top: 290px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.ml-18 {
+  margin-left: 18px;
+}
+
+.ml-38 {
+  margin-left: 38px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.ml-60 {
+  margin-left: 60px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.mt-380 {
+  margin-top: 380px;
+}
+
+.mt-330 {
+  margin-top: 330px;
+}
+
+.mt-140 {
+  margin-top: 140px;
+}
+
+.te-block {
+  display: block;
+}
+
+.bg-yellow {
+  background: #fff4c7;
+}
+
+.light-color {
+  color: #7c7475;
+}
+
+.float-right {
+  float: right;
+}
+
+.border-bottom-1 {
+  border-bottom: 0.6px solid black;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.w-100 {
+  width: 100px;
+}
+
+.w-80 {
+  width: 80px;
+}
+
+.w-80per {
+  width: 80%;
+}
+
+.w-567 {
+  width: 567px;
+}
+
+.w-578 {
+  width: 578px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.w-220 {
+  width: 220px;
+}
+
+.w-155 {
+  width: 153px;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.w-420 {
+  width: 420px;
+}
+
+.w-30 {
+  width: 30px;
+}
+
+.w-60 {
+  width: 60px;
+}
+
+.w-40per {
+  width: 40%;
+}
+
+.w-20per {
+  width: 20%;
+}
+
+.w-16per {
+  width: 16%;
+}
+
+.w-10per {
+  width: 10%;
+}
+
+.w-100per {
+  width: 100%;
+}
+
+.w-70per {
+  width: 70%;
+}
+
+.w-56per {
+  width: 56%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-50px {
+  width: 50px;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+
+.font-9 {
+  font-size: 9px;
+}
+
+.label {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.collapse {
+  border-collapse: collapse;
+}
+
+
+
+.page1 .heading {
+  color: #2a6db4;
+}
+.page1 .heading h3 {
+  margin-top: auto;
+}
+.page1 .heading img {
+  width: 100px;
+}
+.page1 .policy_div .policy {
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .policy_div .policy label {
+  width: 125px;
+}
+.page1 .policy_div .policy .table_div {
+  width: 300px;
+}
+.page1 .policy_div .policy .table_div table {
+  border-collapse: collapse;
+}
+.page1 .policy_div .date_inception {
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .policy_div .date_inception label {
+  width: 125px;
+}
+.page1 .policy_div .date_inception .table_div {
+  justify-content: space-between;
+  width: 300px;
+}
+.page1 .policy_div .date_inception .table_div table {
+  border-collapse: collapse;
+}
+.page1 .policy_div .company_name {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .policy_div .company_name label {
+  width: 125px;
+}
+.page1 .policy_div .company_name .table_div {
+  justify-content: space-between;
+  width: 617px;
+}
+.page1 .policy_div .company_name .table_div table {
+  border-collapse: collapse;
+}
+.page1 .person_details .name {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .person_details .name label {
+  width: 140px;
+}
+.page1 .person_details .name .table_div {
+  justify-content: space-between;
+  width: 617px;
+}
+.page1 .person_details .name .table_div table {
+  border-collapse: collapse;
+}
+.page1 .person_details .date_of_birth {
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .person_details .date_of_birth label {
+  width: 140px;
+  font-weight: 300;
+  font-size: 12px;
+}
+.page1 .person_details .date_of_birth .table_div {
+  justify-content: space-between;
+  width: 300px;
+}
+.page1 .person_details .date_of_birth .table_div table {
+  border-collapse: collapse;
+}
+.page1 .person_details .relation {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .person_details .relation span {
+  margin: 0;
+}
+.page1 .person_details .relation .table_div {
+  justify-content: space-between;
+}
+.page1 .person_details .relation .table_div table {
+  border-collapse: collapse;
+}
+.page1 .person_details .gender {
+  width: 25%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+/* .page1 .person_details .gender label {
+  width: 100px;
+} */
+.page1 .person_details .address {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .person_details .address .add {
+  width: 100px;
+}
+.page1 .person_details .address .table_div table {
+  border-collapse: collapse;
+}
+.page1 .person_details .address .city {
+  margin-left: 5px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.page1 .person_details .address .city label {
+  margin-left: auto;
+}
+.page1 .person_details .address .city table {
+  margin-left: 20px;
+}
+.page1 .person_details .state {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .person_details .state .add {
+  width: 70px;
+}
+.page1 .person_details .state .table_div {
+  width: 640px;
+}
+.page1 .person_details .state .table_div table {
+  border-collapse: collapse;
+}
+.page1 .person_details .state .pin {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page1 .person_details .state .pin label {
+  margin-left: auto;
+}
+.page1 .person_details .state .pin table {
+  margin-left: 20px;
+}
+.page1 .person_details .email {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .person_details .email label {
+  width: 72px;
+}
+.page1 .person_details .email .table_div table {
+  border-collapse: collapse;
+}
+.page1 .bank_details .bank {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .bank_details .bank label {
+  width: 100px;
+}
+.page1 .bank_details .bank .table_div table {
+  border-collapse: collapse;
+}
+.page1 .hospital_details .hospital {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .hospital_details .hospital label {
+  width: 115px;
+}
+.page1 .hospital_details .hospital .table_div {
+  width: 641px;
+}
+.page1 .hospital_details .hospital .table_div table {
+  border-collapse: collapse;
+}
+.page1 .hospital_details .hospital,
+.page1 .hospital_details .address {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .hospital_details .hospital .add,
+.page1 .hospital_details .address .add {
+  width: 116px;
+}
+.page1 .hospital_details .hospital .table_div table,
+.page1 .hospital_details .address .table_div table {
+  border-collapse: collapse;
+}
+.page1 .hospital_details .hospital .city,
+.page1 .hospital_details .address .city {
+  margin-left: 5px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.page1 .hospital_details .hospital .city label,
+.page1 .hospital_details .address .city label {
+  margin-left: auto;
+}
+.page1 .hospital_details .hospital .city table,
+.page1 .hospital_details .address .city table {
+  margin-left: 20px;
+}
+.page1 .hospital_details .state {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .hospital_details .state .add {
+  width: 115px;
+}
+.page1 .hospital_details .state .table_div {
+  width: 640px;
+}
+.page1 .hospital_details .state .table_div table {
+  border-collapse: collapse;
+}
+.page1 .hospital_details .state .pin {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page1 .hospital_details .state .pin label {
+  margin-left: auto;
+}
+.page1 .hospital_details .state .pin table {
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+.page1 .hospital_details .email {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .hospital_details .email label {
+  width: 115px;
+}
+.page1 .hospital_details .email .table_div table {
+  border-collapse: collapse;
+}
+.page1 .hospital_details .date {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page1 .hospital_details .date .date_label {
+  width: 131px;
+}
+.page1 .hospital_details .date .table_div {
+  flex: 1;
+  margin-left: 17px;
+  align-items: center;
+  justify-content: space-between;
+}
+.page1 .hospital_details .date .table_div .date_tables {
+  align-items: center;
+  gap: 10px;
+}
+.page1 .hospital_details .date .table_div .date_tables table {
+  border-collapse: collapse;
+}
+.page1 .hospital_details .date .table_div .time {
+  margin-right: 1rem;
+  align-items: center;
+}
+.page1 .hospital_details .date .table_div .time table {
+  margin-left: 20px;
+}
+
+.page2 .date {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page2 .date label {
+  width: 100px;
+}
+.page2 .date .table_div {
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.page2 .date .table_div table {
+  border-collapse: collapse;
+}
+.page2 .time {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.page2 .time label {
+  width: 99px;
+}
+.page2 .time .table_div {
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+.page2 .time .table_div table {
+  border-collapse: collapse;
+}
+.page2 .place {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page2 .place label {
+  width: 100px;
+}
+.page2 .place .empty_div {
+  width: 672px;
+}
+.page2 .witness {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.page2 .witness label {
+  width: 115px;
+}
+.page2 .witness .table_div {
+  width: 641px;
+}
+.page2 .witness,
+.page2 .address {
+  width: 100%;
+}
+.page2 .witness .add,
+.page2 .address .add {
+  width: 116px;
+}
+.page2 .witness .city,
+.page2 .address .city {
+  margin-left: 5px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.page2 .witness .city label,
+.page2 .address .city label {
+  margin-left: auto;
+}
+.page2 .state {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page2 .state .add {
+  width: 115px;
+}
+.page2 .state .table_div {
+  width: 640px;
+}
+.page2 .state .pin {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page2 .state .pin label {
+  margin-left: auto;
+}
+.page2 .email {
+  width: 100%;
+  margin-top: 5px;
+}
+.page2 .email label {
+  width: 115px;
+}
+.page2 .dates {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.page2 .dates .table_div {
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.page2 .dates .table_div .date_tables {
+  align-items: center;
+}
+.page2 .dates .table_div .date_tables table {
+  border-collapse: collapse;
+}
+.page2 .nature_claim {
+  width: 39%;
+  justify-content: space-between;
+}
+.page2 .post_mortem {
+  align-items: flex-start;
+}
+.page3 .amount_table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-weight: 100;
+  width: 100%;
+  border: 1px solid #7c7475;
+}
+.page3 .amount_table thead {
+  background: #fff4c7;
+}
+.page3 .amount_table thead th {
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 400;
+  border: 1px solid #7c7475;
+}
+.page3 .amount_table td {
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 400;
+  border: 1px solid #7c7475;
+}
+
+.page4 .declaration {
+  margin: 0 10px;
+  font-size: 10px;
+}
+.page4 .declaration ol li {
+  margin: 5px 0;
+}
+.page4 .date_sign {
+  font-size: 10px;
+  align-items: center;
+}
+
+.page5 .guardian_details .name {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page5 .guardian_details .name label {
+  width: 140px;
+}
+.page5 .guardian_details .name .table_div {
+  justify-content: space-between;
+  width: 617px;
+}
+.page5 .guardian_details .name .table_div table {
+  border-collapse: collapse;
+}
+.page5 .guardian_details .date_of_birth {
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.page5 .guardian_details .date_of_birth label {
+  width: 140px;
+  font-weight: 300;
+  font-size: 12px;
+}
+.page5 .guardian_details .date_of_birth .table_div {
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  width: 220px;
+}
+.page5 .guardian_details .date_of_birth .table_div table {
+  border-collapse: collapse;
+}
+.page5 .guardian_details .relation {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page5 .guardian_details .relation label {
+  width: 145px;
+}
+.page5 .guardian_details .relation .table_div {
+  justify-content: space-between;
+}
+.page5 .guardian_details .relation .table_div table {
+  border-collapse: collapse;
+}
+.page5 .guardian_details .gender {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page5 .guardian_details .gender label {
+  width: 70px;
+}
+.page5 .guardian_details .gender table {
+  border-collapse: collapse;
+}
+.page5 .guardian_details .address {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page5 .guardian_details .address .add {
+  width: 70px;
+}
+.page5 .guardian_details .address .table_div table {
+  border-collapse: collapse;
+}
+.page5 .guardian_details .address .city {
+  margin-left: 5px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.page5 .guardian_details .address .city label {
+  margin-left: auto;
+}
+.page5 .guardian_details .address .city table {
+  margin-left: 20px;
+}
+.page5 .guardian_details .state {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page5 .guardian_details .state .add {
+  width: 70px;
+}
+.page5 .guardian_details .state .table_div {
+  width: 640px;
+}
+.page5 .guardian_details .state .table_div table {
+  border-collapse: collapse;
+}
+.page5 .guardian_details .state .pin {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page5 .guardian_details .state .pin label {
+  margin-left: auto;
+}
+.page5 .guardian_details .state .pin table {
+  margin-left: 20px;
+}
+.page5 .guardian_details .email {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.page5 .guardian_details .email label {
+  width: 72px;
+}
+.page5 .guardian_details .email .table_div table {
+  border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* changes for making it responsive */
+
+.bod{
+  border: 1px solid black;
+}
+
+.data {
+  min-width: 20px;
+  height: 20px;
+  text-align: center;
+  border: 1px solid #acacac;
+  font-size: 12px;
+}
+
+.data1 {
+  min-width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.adddup{
+  display: none;
+}
+.addorg{
+  display: block;
+}
+
+
+@media screen and (max-width: 780px) {
+  page{
+    padding: 18px;
+  }
+  page[size="A4"] {  
+    width:auto;
+    height: auto; 
+  }
+  page[size="A4"][layout="landscape"] {
+    width: auto;
+    height: auto;  
+  }
+  .mmw-550{
+    min-width: 550px;
+  }
+  .ml-0{
+    margin-left: 0 !important;
+  }
+  .adddup{
+    display: block;
+  }
+  .addorg{
+    display: none;
+  }
+ .mw-100{
+  width: 100% !important;
+ }
+ .mw-60{
+  width: 60% !important;
+ }
+ .mw-30{
+  width: 30% !important;
+ }
+.te-flex{
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+.overflow{
+  overflow-x: auto;
+}  
+
+.table_div{
+  /* width: 100% !important; */
+  overflow-x: auto;
+  margin-top: 5px;
+} 
+
+.page1 .policy_div .company_name .table_div{
+  width:100%!important;
+}
+
+.page2 .date .table_div{
+  width:60%;
+}
+
+.flex-start{
+  justify-content: flex-start!important;
+  align-items: flex-start!important;
+}
+
+
+.ml-md-0{
+  margin-left:0!important;
+}
+
+.w-md-70{
+  width:70%!important;
+}
+
+.te-pt-md-5{
+  padding-top:5px!important;
+}
+
+.w-600{
+  min-width: 600px;
+  width:70%!important;
+}
+
+.w-220{
+  width:220px!important;
+}
+
+.w-md-100{
+  width:100%!important;
+}
+
+.te-ml-md-10{
+  margin-left:10px!important;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+.mmt-5{
+  margin-top: 5px !important;
+}
+.colon{
+  display: none;
+}
+.inline{
+  display: inline;
+}
+.mr-auto{
+  margin-right: auto !important;
+}
+label{
+  width: fit-content !important;
+}
+.flex-0{
+  flex: 0 !important;
+}
+.mh-20{
+  min-height: 20px;
+}
+.nowrap{
+  flex-wrap: nowrap !important;
+}
+.mt-15{
+  margin-top: 15px;
+}
+}
+@media screen and (max-width: 480px) {
+  .smw-100{
+    width: 100% !important;
+  }
+  .smw-60{
+    width: 60% !important;
+  }
+  .flex-col-rev{
+    flex-direction: column-reverse;
+  }
+  .sm-flex-col{
+    flex-direction: column;
+  }
+  .sml-0{
+    margin-left: 0;
+  }
+  h4{
+    font-size: 14px;
+  }
+
+  .te-max-w-20 .data{
+    width: 20px;
+  }
+
+  .te-max-w-270{
+    max-width: 270px!important;
+  }
+
+  .te-sm-block{
+    display: block;
+  }
+
+  .te-sm-wrap{
+    flex-wrap: wrap;
+  }
+
+  .mh-sm-20{
+    min-height: 20px;
+  }
+
+  .te-sm-w-100{
+    width: 100% !important;
+  }
+
+  .sm-no-wrap{
+    flex-wrap: nowrap!important;
+  }
+  .sm-ml-0{margin-left:0!important;}
+  .sm-mt-5{margin-top:5px!important;}
+
+  .te-sm-col{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 310px) {
+  .xsm-baseline{
+    align-items: baseline !important;
+  }
+  .xsm-flex-col{
+    flex-direction: column;
+  }
+}

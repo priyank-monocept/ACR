@@ -1,23 +1,60 @@
 const express = require('express');
 const app = express();
+const puppeteer = require('puppeteer');
+const fs= require('fs');
+const ejs = require("ejs");
+const path = require("path");
+
 const PORT = 5000;
-
-const PDFDocument = require('pdfkit');
-const fs = require('fs');
+app.use(express.json());
 
 
-//code for generate-pdf
-app.get("/generate-pdf", (req,res)=>{
+//Set ejs as view engine
+app.set('view engine', 'ejs');
 
-    const doc = new PDFDocument();
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+app.get("/test",  async(req,response)=>{
+    const htmlContent = await ejs.renderFile('views/htmlTemplate.ejs', {});
+    response.writeHeader(200, {"Content-Type": "text/html"});  
+    response.write(htmlContent);  
+    response.send();  
+})
+
+app.post("/generate-pdf", async (req, res) => {
+    // Access posted data from req.body
+    const data = req.body;
+
+     // Render the EJS template with dynamic data
+    // const htmlContent = await ejs.renderFile(__dirname+'/views/htmlTemplate.ejs', { data });
+    const htmlContent = await ejs.renderFile('views/htmlTemplate.ejs', { data });
+    // Launch a headless browser instance
+
+    const browser = await puppeteer.launch();
+
+    // Open a new page
+    const page = await browser.newPage();
+
+    // Set the HTML content of the page
+    await page.setContent(htmlContent);
+
+    // Generate PDF from the HTML content
+    const pdfBuffer = await page.pdf({
+        format: 'A4',
+        printBackground: true
+    });
+
+    // Close the browser
+    await browser.close();
+
+    // Send the PDF buffer as response
     res.setHeader('Content-Type', 'application/pdf');
     res.setHeader('Content-Disposition', 'attachment; filename="example.pdf"');
+    res.send(pdfBuffer);
+});
 
-    doc.pipe(res);
-    doc.fontSize(24).text('Dynamic PDF Generated with Node.js', { align: 'center' });
-    doc.end();
-})
-
-app.listen(PORT, ()=>{
-    console.log(`App is running at ${PORT}`)
-})
+ 
+app.listen(PORT, () => {
+    console.log(`App is running at ${PORT}`);
+});

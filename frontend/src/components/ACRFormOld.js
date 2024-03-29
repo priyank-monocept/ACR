@@ -4,8 +4,10 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import axios from "axios";
 import "../App.css";
+import { useState } from "react";
 
 const ACRFormNew = () => {
+  const [loading, setLoading] = useState(false); // State for loading indicator
   const form = useForm();
   const {
     register,
@@ -15,6 +17,7 @@ const ACRFormNew = () => {
   } = form;
 
   const formSubmit = (data) => {
+    setLoading(true); // Set loading to true when form submits
     axios({
       method: 'post',
       url: '/generate-pdf', // Route on your Node.js server
@@ -37,6 +40,8 @@ const ACRFormNew = () => {
      console.log(response);
     }).catch(error => {
       console.error('Error generating PDF:', error);
+    }).finally(() => {
+      setLoading(false); // Reset loading state after request completes
     });
   };
 
@@ -182,7 +187,13 @@ const ACRFormNew = () => {
           </div>
         </div>
         <div className="submit-button">
-        <button type="submit">Download Pdf</button>
+         {/* Conditionally render loader if loading */}
+         {loading ? (
+            <div>Loading...</div>
+          ) : (
+            <button type="submit">Download Pdf</button>
+          )} 
+       
         </div>
       </form>
       

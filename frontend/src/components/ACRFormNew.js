@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import Header from './Header'
-import ACRFormFields from './ACRFormFields'
+import ACRFormOld from './ACRFormOld'
 import "../App.css"
 import ACRCsvUpload from './ACRcsvupload'
 
@@ -16,10 +16,10 @@ const ACRFormNew = () => {
       <>
       <Header/>
       <div className='toggleTb'>
-        <div className='left-toggle-panel' onClick={toggleSingleForm}> { isSingle ? 'Single PDF'  : 'Bulk PDF' }  </div>
+        <div className='left-toggle-panel' onClick={toggleSingleForm}> { isSingle ? 'Bulk PDF'  : 'Single PDF' }  </div>
         
       </div>
-      { isSingle ?  <ACRFormFields/>   :  <ACRCsvUpload/> }
+      { isSingle ?  <ACRFormOld/>   :  <ACRCsvUpload/> }
      
       </>
   
